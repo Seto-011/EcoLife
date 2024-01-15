@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EcoLife - Redes Sociales</title>
+    <link rel="stylesheet" type="text/css" href="estilo4.css">
+    <link rel="shortcut icon" href="Logo.jpg">
+</head>
+<body>
+
+<!-- Barra de navegación u encabezado -->
+<header>
+    <div class="titulo1">
+        <h1>Redes Sociales</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="Inicio.html">Inicio</a></li>
+            <li><a href="Tienda.html">Tienda</a></li>
+            <li><a href="Videos.html">Videos</a></li>
+            <li><a href="Redes.html">Redes Sociales</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Contenido de tu sección "Redes Sociales" aquí -->
+
+<!-- Sección de Redes Sociales -->
+<div class="redes-sociales">
+    <h2>Síguenos en Redes Sociales</h2>
+    <ul>
+        <li><a href="#" onclick="abrirRedSocial('facebook')">Facebook</a></li>
+        <!-- Agrega más redes sociales según sea necesario -->
+    </ul>
+</div>
+
+<!-- Script para abrir enlaces en nuevas pestañas -->
+<script>
+    function abrirRedSocial(red) {
+        var url = "";
+
+        // Asigna las URL de tus perfiles de redes sociales
+        switch (red) {
+            case 'facebook':
+                url = 'https://www.facebook.com/profile.php?id=100070888637866';
+                break;
+            case 'twitter':
+                url = 'https://twitter.com/TuTwitter';
+                break;
+            // Agrega más casos según sea necesario
+        }
+
+        // Abre la URL en una nueva pestaña
+        window.open(url, '_blank');
+    }
+</script>
+
+</body>
+</html>
+
